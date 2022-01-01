@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+</head>
+<body>
+    <div>
+        <h1>Filled By Parents</h1>
+        <pre>
+            This form is to coinform that you give the permission to your child
+            to go trip which is oragnacied by NMIMS department
+    </pre>
+    </div>
+    <div>
+        <form action="form.php">
+            <!-- placeholder give the heading on input bar  -->
+            <input type='text' placeholder="Name of student">
+            <input type='text' placeholder="Sap Id of student">
+            <br><br>
+            <!-- if you write below statement inside the lable the it select by clicking on 'yes' wala also -->
+            <!-- you have to give option wala only one option is selected then you have to write name attribute-->
+            <input type='radio' name ="option">Yes
+            <label for="no">
+                <input type='radio' name="option" id="no">No
+            </label>
+            <br>
+            Enter your child stream
+            <label for="no1">
+                <input type='radio' name="stream" id="no1">IT
+            </label>
+            <label for="no2">
+                <input type='radio' name="stream" id="no2">Computer
+            </label>
+            <label for="no3">
+                <input type='radio' name="stream" id="no3">DataScience
+            </label>
+            <br>
+            <input type="checkbox" id="a" name="agree" >
+            <label for="a">
+            agree all terms and condition</label>
+            <br>
+            <textarea name="feed" id="" cols="30" rows="10"placeholder="Enter your review"></textarea>
+            <select name="car" id="cars">
+                <option value="nocar">Select car</option>
+                <option value="car">indica</option>
+                <option value="car">hundia</option>
+                <option value="car">swift</option>
+            </select>
+        </form>
+        <!-- iframe present the other website page and you can use but google does't allowed to do this due to security reasons -->
+        <iframe src="https:///www.bing.com" frameborder="0" width="900" height="900">here we use bing in my website</iframe>
+    </div>
+    <footer>
+        <h3>Note</h3>
+        We are not responceble for any issue raleted to your safety
+    </footer>
+</body>
+</html>

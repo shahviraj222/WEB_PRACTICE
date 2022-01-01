@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shah company form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body bgcolor="pink">
+    <marquee>
+        <h2>This is html form </h2>
+    </marquee>
+    <!-- all the inputs saved to ###.php file -->
+    <form action="beckhended.php">
+    <!-- Here in lable tag we give amasing feature -->
+        <div>
+        <label for="Name">Name</label>
+    <!-- Here my input tag is used and "type" attribute is used for to selecte the type of input  -->
+        <input type="text" name="Name" id="Name">
+    
+        </div>
+        <br>
+        <div>
+        Role:<input type="text" name="role">
+       </div>
+       <br>
+       <div>
+        <label for="Bonus">Bonus</label>
+        <input type="number" name="money" id="Bonus">
+    </div> 
+    <br>
+    <div>
+        <label for="B">ContactNumber</label>
+        <input type="number" name="contact" id="B">
+    </div>  
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+    <br>
+    <div>
+        Date:<input type="date">
+    </div>
+    <br>
+    <div>
+        Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+        <br>
+        <div>
+        <label for="Car" >car:</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf"selecte >Swift</option>
+        </select>>
+    </div>
+    <div>
+       all info is right:<input type="checkbox"  checked name="sl">
+    </div>
+    <div>
+    accepts terms and condition:<input type="checkbox" name="sel">
+    </div>
+        <br>
+        <div>
+        <input type="submit" value="SumbitNow">
+        <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
