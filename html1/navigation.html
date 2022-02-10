@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Website </title>
+    <style>
+        .navbar{
+            background-color: seagreen;
+            border-radius: 132px;
+            border: black solid 2px;
+        }
+        /* if you want to use float and use parent effect then use this  */
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            /* when we use float then element over the parent therefore any change in parent doesn't show in element */
+            padding: 6px;
+            float: left;       /*float is use to arrange element in one line */
+            margin: 13px 20px;
+            list-style: none;
+        }
+        .navbar li a{
+           text-decoration: none;
+          color:#4c140f;
+        }
+        .search{
+            float: right;
+            margin: 15px;
+            border: solid black;
+            color: white;
+            margin-right: 50px;
+            border-radius: 5px;
+        }
+        
+        .navbar li a:hover{
+            color:red;
+        }
+        body{
+            background-image: url("https://wallpapercave.com/wp/wp6965198.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- creating search bar -->
+                <div class="search">
+                   <!-- show message on search bar -->
+                    <input type="text" name="search" id="searchbar" placeholder="search website"  width="30">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

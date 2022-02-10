@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list and tables tags exp</title>
+    <!-- giving border to tabel tag all border  -->
+    <style>
+      th
+      {
+        border: 5px solid rgb(255, 102, 0);
+      }
+          td {
+           border: 5px solid blue;
+         
+        }
+        table
+        {
+          border: 5px solid pink;
+        }
+        /* heading ka table is not changing  */
+        thead
+        {
+          text-align: center;
+          text-decoration: underline;
+        }
+     </style>
+  </head>
+  <body bgcolor="yellow">
+    <h1>Welcome to my web devloping system</h1>
+    <ul type="circle">
+      <li>This is my first unodered list</li>
+      <li>This is my second unodered list</li>
+      <!-- sublist form ho ke aagaya -->
+      <ol type="1">
+        <li>First Odered list inside the unodered list</li>
+        <li>Second Odered list inside the unodered list</li>
+        <li>Third Odered list inside the unodered list</li>
+        <li>Four Odered list inside the unodered list</li>
+      </ol>
+      <li>This is my third unorded list</li>
+      <ol type="I">
+        <li>Odered list inside the unodered list</li>
+        <li>Odered list inside the unodered list</li>
+        <li>Odered list inside the unodered list</li>
+      </ol>
+      <li>This is my four unorded list</li>
+    </ul>
+    <h2>HTML TABLE</h2>
+    <marquee>
+    
+        <table>
+      <thead>
+        Result of 2020-2021 
+        <tr>
+            <!-- th for bolding text -->
+          <th>NAME</th>
+          <th>ROLLNO</th>
+          <th>RESULT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <!-- align use to text copy in center -->
+          <td align="center">VIMAL</td>
+          <td align="center">21</td>
+          <td align="center">PASS</td>
+        </tr>
+        <tr>
+          <td align="center">VIRAJ</td>
+          <td align="center">22</td>
+          <td align="center">PASS</td>
+        </tr>
+        <tr>
+          <td align="center">SIDDH</td>
+          <td align="center">23</td>
+          <td align="center">PASS</td>
+        </tr>
+        <tr>
+          <!-- colspan is used -->
+          <td align="center" colspan="2">DOLLY</td>
+          <!-- <td align="center">24</td> -->
+          <td align="center">FAILL</td>
+        </tr>
+      </tbody>
+    </table>
+</marquee>
+  </body>
+</html>

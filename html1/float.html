@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>float learning</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+        .container{
+        margin: 5px auto;
+        
+        border: 3px solid grey;
+        /* padding is for commparace content in side the box */
+        padding:40px;
+        width: 900;
+        height: 600px;
+        background-color:rgb(202 207 219);;
+        }
+        .iterm{
+             margin: 10px 5px; 
+            padding: 20px;
+            background-color:rgb(230, 207, 173);
+            border: 3px solid grey;
+        }
+        .para{
+            text-align: justify;
+            font-family: 'Ephesis', cursive;
+            
+        }
+        #fruit {
+            /* this how we saprte two box */
+            margin: 5px;
+            float: right;
+            width: 48%;
+            /* align is use to how text appere here it completely align  */
+            
+        }
+
+        #computer {
+            margin: 5px;
+            float: left;
+            width: 48%;
+            
+        }
+        #book{
+        
+            clear: both;
+            float: left;
+            width: 48%;
+        }
+        #cooking{
+        
+        
+       
+        float: right;
+        width: 48%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <h1>Welcome to super market</h1>
+        <div id="fruit" class="iterm">
+           
+            <p id="fruitpara" class="para">
+                <h3>Fruits</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa beatae, minus inventore eius quos quia
+                repellat, iste accusantium ipsum expedita adipisci, rerum doloremque amet consequuntur nisi corporis
+                voluptatem ullam quibusdam obcaecati eveniet! In iste dicta hic ad, repellat similique maiores.
+            </p>
+        </div>
+    
+        <div id="computer" class="iterm">
+            <h3><u><a href="https://www.amazon.in/s?k=computer&i=computers&ref=nb_sb_noss_1" target="_blank"> Computer</a></u></h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa beatae, minus inventore eius quos quia
+                repellat, iste accusantium ipsum expedita adipisci, rerum doloremque amet consequuntur nisi corporis
+                voluptatem ullam quibusdam obcaecati eveniet! In iste dicta hic ad, repellat similique maiores.
+            </p>
+        </div>
+    
+    
+        <div id="book" class="iterm">
+            <h3>Book</h3>
+            <p id="bookpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa beatae, minus inventore eius quos quia
+                repellat, iste accusantium ipsum expedita adipisci, rerum doloremque amet consequuntur nisi corporis
+                voluptatem ullam quibusdam obcaecati eveniet! In iste dicta hic ad, repellat similique maiores.
+            </p>
+        </div>
+        <div id="cooking" class="iterm">
+            <h3>Cook Accesories</h3>
+            <p id="cookpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa beatae, minus inventore eius quos quia
+                repellat, iste accusantium ipsum expedita adipisci, rerum doloremque amet consequuntur nisi corporis
+                voluptatem ullam quibusdam obcaecati eveniet! In iste dicta hic ad, repellat similique maiores.
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

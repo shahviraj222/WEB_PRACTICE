@@ -1,0 +1,6 @@
+body{
+    background-color:coral !important;
+    color: blueviolet;
+    /* this wala is not working */
+    font-size: italic;
+}
