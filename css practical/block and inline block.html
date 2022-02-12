@@ -1,0 +1,52 @@
+<!-- 
+    Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+    https://www.w3schools.com/css/css_inline-block.asp
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear and float function</title>
+    <style>
+        div
+        {
+            color: blue;
+            border: solid 1px black;
+            border-radius: 8px;
+           
+            width: 10%;
+           
+            display:inline-block;
+            /* gradient is very usefull */
+            background-image: linear-gradient( yellow,green);
+            /* clear: auto; */
+        }
+        ul{
+        list-style-type:upper-roman;
+        }
+      </style>
+</head>
+<body>
+    <div id="b1">
+        <h1>BOX1</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis saepe vitae maiores assumenda consectetur animi, perferendis sequi provident ipsum libero aliquam sunt sit expedita quos aperiam architecto accusamus similique minima.
+    </div>
+    <div id="b2">
+        <h1>BOX2</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cum placeat maxime necessitatibus, earum alias itaque sunt ut molestiae, doloremque pariatur fugiat cupiditate quam, facilis adipisci voluptatem. Officiis, cum illo?
+    </div>
+    <div id="b3">
+        <h1>BOX3</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis saepe vitae maiores assumenda consectetur animi, perferendis sequi provident ipsum libero aliquam sunt sit expedita quos aperiam architecto accusamus similique minima.
+    </div>
+    <ul>
+        <li>X</li>
+        <li>Y</li>
+        <li>Z</li>
+        <li>A</li>
+    </ul>
+</body>
+</html>
