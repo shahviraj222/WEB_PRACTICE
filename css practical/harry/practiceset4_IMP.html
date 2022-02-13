@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* how to put two div tag in centre of tag  */
+        .left
+        {
+            /* margin:auto; */
+            width: 50%;
+            height: 563px;
+            background-color: red;
+            display: inline-block;
+        }
+        .right
+        {
+            width: 50%;
+            height: 563px;
+            background-color: yellow;
+            display: inline-block;
+        }
+        footer
+        {
+            text-transform: uppercase;
+            color: white;
+            background-color: black;
+            display: inline-block;
+            height: 107px;
+            width: 100%;
+        }
+        nav
+        {
+        
+            color: white;
+            background-color: black;
+            display: inline-block;
+            height: 40px;
+            width: 100%;
+            /* display: flex!important; */
+            /* justify-content: space-around; */
+            flex-basis: auto;
+        }
+        /* all the anchor tag inside the nav tag */
+        nav a
+        {
+            display: inline-block;
+            background-color: rgb(172, 137, 95);
+            padding:10px;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            background-color: blueviolet;
+        }
+        /* used for going through the keyboard in various navigation link */
+        a:focus
+        {
+            background-color: blanchedalmond;
+        }
+        #serachbar
+        {
+            float: right;
+        }
+        /* focus is used when we have to say ki keyboard is in use like this  */
+        input:focus {
+              background-color: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">DETAIL</a>
+        <a href="#">HISTORY</a>
+        <input type="text" placeholder="search on page" id="serachbar">
+    </nav>
+    <!-- if ii write two div in below wala fashion then i get both inline way -->
+    <div class="left">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem odio commodi voluptas. Quia ad eum sint qui quis aspernatur earum aut esse, exercitationem debitis accusantium placeat expedita molestiae? Esse.
+    </div><div class="right">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem odio commodi voluptas. Quia ad eum sint qui quis aspernatur earum aut esse, exercitationem debitis accusantium placeat expedita molestiae? Esse.
+    </div>
+    <footer>
+        Copy right is &copy; by our company
+    </footer>
+</body>
+</html>

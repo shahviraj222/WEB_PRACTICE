@@ -1,0 +1,15 @@
+.container
+{
+    border: 2px solid black;
+    background-color: blueviolet;
+}
+body
+{
+    background-image: url("https://firebase.google.com/docs/auth/images/firebaseui-android.png");
+    width: 250px;
+    height: 250px;
+    background-size:500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
