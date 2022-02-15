@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .containe
+        {
+            width: 50em;
+            height: 40em;
+            background-color: aqua;
+            margin: auto; /*this is used to centre the content of div tag */
+            /* display: inline-block;  */
+        }
+        .box
+        {
+            width: 10em;
+            height: 10em;
+            background-color: blueviolet;
+            position: relative;/*i have one more option called absolute this used body for refrence*/
+            /* we have one more called fixed not affect by scroll */
+            top: 5px;
+            left: 45px;
+            background-image:url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+            background-size: cover;  
+            display: inline-block;   
+             
+        }  
+        ul
+        {
+            display: inline-block;   
+            position:relative;
+            top:81px;
+            left: 36px;
+            /* float: right; */
+            list-style: square;
+        }
+    </style>
+    <title>Position related</title>
+</head>
+<body>
+    <div class="containe">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quos odit? Hic ipsum praesentium quia enim sint facilis tempora porro fuga consequuntur est, labore, odio laudantium a neque facere debitis!
+        </p>
+        <div class="box">
+            This Box Is Subclass 
+        </div>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Guva</li>
+        </ul>
+    </div>
+</body>
+</html>
