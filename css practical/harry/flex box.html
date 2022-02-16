@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box </title>
+    <style>
+        /* to avoid any default margin padding given by the browser */
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .navigation
+        {
+            background-color: black;
+            color: white;
+        }
+        nav
+        {
+            padding: 15px;/*use to increse black box padding between a and nav tag*/
+        }
+        nav a{
+            margin: 5px;/*this is use to space between a tags*/
+        }
+        img
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction:row;  
+            flex-wrap: wrap;/*if screen becomes small then boxes shift to down*/
+            /* justify-content: center ; */
+            justify-content:center;
+            align-items: center;  
+            align-content: center;
+            text-align: center; /*all text inside this tag take centre position */ 
+        }
+        .b1
+        {
+            width: 150px;
+            height: 150px;
+            background-color: blue; 
+            border: 2px solid black;
+            flex-grow: 2;
+        }
+        .b2
+        {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;  
+            border: 2px solid black;
+        }
+    </style>    
+</head>
+<body>
+    <div class="navigation">
+    <nav>
+        <img src="https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar-thumbnail.png" alt="">
+        <a>Home</a> 
+        <a>About</a>
+        <a>Contact</a>
+        <a>History</a>
+    </nav>
+   </div>
+   <div class="container">
+   <div class="b1">
+       BOX1
+   </div>
+   <div class="b2">
+    BOX2
+</div>
+<div class="b2">
+    BOX3
+</div>
+<div class="b2">
+    BOX4
+</div>
+</div>
+</body>
+</html>
