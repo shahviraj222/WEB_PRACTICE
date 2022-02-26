@@ -14,7 +14,7 @@ footer
 }
 header
 {
-
+   
     height: 8vh;
     background-color: #2874f0;
     margin-top:0;
@@ -32,6 +32,10 @@ nav a
     padding: 3PX;
     margin: 4PX;
     text-decoration: none;
+}
+nav a:hover
+{
+    color: white;
 }
 .logo
 {

@@ -18,6 +18,20 @@ nav
     width: 12vw;
     
 }
+.sound
+{
+    /* this is my main audio ka control */
+    display: none;
+position: relative;
+right: 170px;
+height: fit-content;
+top: 170px;
+border-radius: 5px;
+}
+main
+{
+    height: 300px;
+}
 nav img
 {
     height: 3vh;
@@ -64,7 +78,7 @@ div
 }
 .box img
 {
-    height: 30vh;
+    height: 18vh;
     padding: 18px;
     transition: 1s;
 }
@@ -75,7 +89,7 @@ div
 }
 main img
 {
-    height: 30vh;
+    height: 40vh;
     padding: 18px;
     transition: 1s;
 }
