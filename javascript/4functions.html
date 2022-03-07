@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- <script scr="name of file of .js"></script> -->
+    <script>
+        // function function_name(parameter to passed)
+        // {
+        //     // defination of functio 
+        // }
+        function greet(p,q="Default")
+        {
+            console.log(`Roll No:${p} Name:${q}`)
+        }
+        let p=[1,2,3,4,5,6,7,8,9]
+        let q=["Viraj","ja","ram","Vir","Vira","Vraj","Raj"]
+        greet(p[0],q[0]);
+        greet(p[1],q[1]);
+        greet(p[2],q[2]);
+        greet(p[3],q[3]);
+        greet(p[4]);
+
+        // return function
+        function sum(a,b,c)
+        {
+            return a+b+c;
+        }
+        let r= sum(4,5,8);
+        console.log(r);
+    </script>
+</body>
+</html>

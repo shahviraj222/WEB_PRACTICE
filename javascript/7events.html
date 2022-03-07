@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #btn
+        {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>My paragrah is about collage</h2>
+    <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis recusandae, inventore laudantium sint beatae quod reiciendis aspernatur accusantium doloremque minus dolorum, non explicabo nihil ab adipisci mollitia rem dignissimos earum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias, doloribus non asperiores recusandae est modi sint atque, praesentium blanditiis quos laudantium sequi, natus perferendis deleniti dicta id excepturi consequuntur quaerat commodi. Reprehenderit fugiat praesentium sequi dolorem, eos deleniti asperiores ratione adipisci fugit doloribus voluptatibus, quisquam magni ipsa! Quibusdam ab, ea asperiores possimus culpa reiciendis explicabo fugit dolores voluptatum pariatur maiores, doloribus nostrum repellendus eius natus sunt rerum itaque tempora voluptate error expedita earum laboriosam! Asperiores fugit ipsam non, aspernatur cum nihil quasi labore sint aliquid, ex doloribus quibusdam deleniti exercitationem culpa minima provident vitae unde, velit harum facilis voluptates mollitia nisi iusto. Sequi possimus delectus pariatur. Hic quas reiciendis dicta consectetur delectus nostrum eum? Tempore praesentium nesciunt inventore, dolor molestiae, veritatis obcaecati rem optio in ducimus tenetur maxime! Dolorem est in hic, ipsam quasi sapiente laboriosam maiores obcaecati blanditiis excepturi sequi autem, iure nostrum similique natus suscipit fuga aliquid officia ab repudiandae. Sed, architecto non beatae aspernatur nam sunt harum. Aliquam porro delectus enim? Rem culpa quidem neque suscipit magnam quos accusamus dolorem? Maxime officiis nam ratione quidem quaerat aliquid facilis animi assumenda quo saepe temporibus sint id dolorum voluptatum vero ullam asperiores quod, magni tempore eligendi neque recusandae doloremque perspiciatis. Doloremque necessitatibus consequuntur veniam quam ipsam architecto voluptas minima inventore ea error atque harum rerum, dignissimos ipsum voluptatem, sequi dolor nisi in facilis mollitia incidunt ipsa minus possimus quaerat! Repudiandae ut unde corporis ipsa eius dolores, tempora quis quaerat repellat, dicta distinctio in iusto fugiat! Aliquid, nemo quos? Unde porro velit ad magnam quam itaque rerum optio architecto! Assumenda non recusandae earum consectetur debitis laborum beatae consequuntur cupiditate nam accusantium atque totam reprehenderit, ipsa placeat aliquam id laboriosam commodi molestias sunt facilis eos ratione dolor eligendi. Earum cupiditate unde quo voluptate? Eligendi voluptatem sit est! Incidunt vitae qui velit amet voluptatem dolore, ratione aspernatur sit, asperiores ea illum in officia saepe quibusdam facilis architecto minima voluptas tempora ut? Doloremque totam rerum incidunt esse cumque impedit maxime, et rem quasi! Placeat dicta ad facere ipsam omnis qui assumenda expedita corporis mollitia. Asperiores quaerat fugit nam rem est quis deserunt odio iure? Fugit cum illum magni, eligendi minus voluptatibus ab qui. Autem laborum debitis accusantium animi dolorum enim adipisci harum voluptatum eos voluptates. Ullam earum nisi, molestias ipsa debitis quis obcaecati id perferendis hic repellendus nemo ea amet nam doloremque, libero rerum enim. Ullam voluptates harum illo neque dolore quis maiores, fugiat ipsum magni deserunt fugit dolor tempora eum maxime fuga repellat voluptas? Doloribus, vel. Nesciunt illo quam deleniti animi repellat optio, nulla ipsum, voluptas magni reprehenderit quasi voluptatem et eligendi aliquid mollitia? Consectetur exercitationem nesciunt dolor autem, enim eum, deserunt voluptates fuga sequi unde temporibus eligendi odio obcaecati in consequuntur adipisci pariatur non soluta placeat hic odit distinctio atque. Excepturi ab iure exercitationem inventore itaque aspernatur, dolores non possimus aliquam dolore, minima cumque, dolorem quibusdam! Iure repellendus eveniet esse provident! Quaerat aliquid officiis sapiente fugiat magni. Excepturi, optio sapiente. Vel expedita odit iste voluptates repellat eaque dicta veniam sequi?
+    </p>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+          let p=document.getElementById('para');
+          p.addEventListener('mouseover',function run()
+          {
+              alert("Inside the para");
+          })
+        function hide(){
+        let b=document.getElementById('btn');
+        p=document.getElementById('para');
+        if(p.style.display!='none')
+        {
+            p.style.display='none';
+        }
+        else
+        {
+            p.style.display='block';
+        }
+        }
+    </script>
+</body>
+</html>
