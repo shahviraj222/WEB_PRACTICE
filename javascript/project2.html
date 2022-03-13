@@ -101,13 +101,13 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td><button type="" class="btn btn-sm btn-primary">Delete</button></td>
+            <td><button type="" class="btn btn-sm btn-primary" id="del">Delete</button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td><button type="" class="btn btn-sm btn-primary">Delete</button></td>
+            <td><button type="" class="btn btn-sm btn-primary" id="del">Delete</button></td>
           </tr>
         </tbody>
       </table>
@@ -136,7 +136,7 @@
             <th scope="row">${i}</th>
             <td>${t}</td>
             <td>${d}</td>
-            <td><button type="" class="btn btn-sm btn-primary">Delete</button></td>
+            <td><button type="" class="btn btn-sm btn-primary" id="del">Delete</button></td>
           </tr>
           `
           pre= document.getElementById('tb').innerHTML
@@ -150,18 +150,10 @@
           localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray))//storing element in local storage
         }
         });
-
-      //   update=()=>{
-      //   if(localStorage.getItem("itemsJson")==null)
-      //   {
-      //     console.log("HI I am storing data");
-      //     // itemJsonArray=[];//creating array of name 'itemJsonArray
-      //     // itemJsonArray.push([t,d]);//pushing element in array
-
-      //     // localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray))//storing element in local storage
-      //   }
-     
-      // }
+        del.addEventListener("click",()=>
+        {
+          
+        })
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 

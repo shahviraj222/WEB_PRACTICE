@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear and float function</title>
+    <style>
+        div
+        {
+            color: blue;
+            border: solid 1px black;
+            border-radius: 8px;
+            width: 10%;
+            display: inline-block;
+        
+            /* clear: auto; */
+        }
+        #b1
+        {
+            float:left;
+            clear:right;
+            display: inline-block;
+        }
+        #b2
+        {
+          float: right;
+          height:150%;
+        }
+        /* IMP Apply to **floating** and **non-floating** elements only IMP*/
+        p{
+            clear: left;
+            /* clear:right;
+            clear: both; */
+        }
+    </style>
+</head>
+<body>
+    <div id="b1">
+        <h1>BOX1</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis saepe vitae maiores assumenda consectetur animi, perferendis sequi provident ipsum libero aliquam sunt sit expedita quos aperiam architecto accusamus similique minima.
+    </div>
+    <div id="b2">
+        <h1>BOX2</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis saepe vitae maiores assumenda consectetur animi, perferendis sequi provident ipsum libero aliquam sunt sit expedita quos aperiam architecto accusamus similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea similique non perferendis blanditiis culpa, quia animi quibusdam assumenda illo unde mollitia dignissimos aliquid deleniti quis aspernatur voluptatibus. Earum, perspiciatis iste.
+    </div>
+    <!-- <div id="b3">
+        <h1>BOX3</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis saepe vitae maiores assumenda consectetur animi, perferendis sequi provident ipsum libero aliquam sunt sit expedita quos aperiam architecto accusamus similique minima.
+    </div> -->
+    <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptate enim provident eius repudiandae ratione vel nihil inventore placeat reprehenderit vitae impedit consequuntur facere cumque perspiciatis maiores molestias a soluta.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, mollitia recusandae modi unde blanditiis quos beatae perferendis quasi officiis alias fugit, odit aliquam est ea sapiente impedit quaerat amet. Autem.
+</p>
+</body>
+</html>
