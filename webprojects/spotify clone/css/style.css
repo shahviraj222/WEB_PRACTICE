@@ -43,8 +43,8 @@ nav ul
 }
 nav li
 {
-    margin: 50px;
-    font-size: larger;
+    margin: 25px;
+    font-size: 2vw;
     /* font-size:1vw; */
 }
 nav a:hover
@@ -53,6 +53,7 @@ nav a:hover
 }
 main
 {
+    height:30vh;
     display:flex;
     /* margin-left: 5px; */
 }
@@ -72,7 +73,8 @@ div
 {
     display: flex;
     margin: 5px;
-    width: fit-content;
+    height: 25vh;
+    /* width: fit-content; */
     padding: 10px;
     background-color: black;
 }
