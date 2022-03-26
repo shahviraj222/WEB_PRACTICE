@@ -21,7 +21,22 @@ const ExpenseForm = () => {
     {
         setEnteredDate(event.target.value); 
     }
-    return <form>
+    const sumbitHandler=()=>{
+       
+        const EnteredData={
+            tit:EnteredTitle,
+            d:new Date(EnteredDate),
+            a:EnteredAmount
+
+        }  
+        // error();
+        // 
+        // Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform
+        // console.log(EnteredData); //because of some security issue we are not be able to see in chrome
+        console.log(EnteredData.a);
+        
+     }
+    return <form onSubmit={sumbitHandler}>
         {/* form taking input of date ,title and amount*/}
         <div className="new-expense__controls" >
             <div className="new-expense__controls">

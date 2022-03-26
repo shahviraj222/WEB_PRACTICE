@@ -15,6 +15,7 @@ function Expense(prop) {
      
     const [title,setTitle]=useState(prop.title);
     const stremo = () => {
+        console.log(title);
             setTitle('Updated!!');
             console.log(title);
         }
