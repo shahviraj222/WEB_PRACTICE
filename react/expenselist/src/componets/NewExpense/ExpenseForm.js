@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import './NewExpense.css';
 import './ExpenseForm.css'
 
-const ExpenseForm = () => {
+const ExpenseForm = (prop) => {
     const [EnteredTitle,setEnterdTitle]=useState('')
     const [EnteredAmount,setEnteredAmount]=useState('');
     const[EnteredDate,setEnteredDate]=useState('');
@@ -28,13 +28,13 @@ const ExpenseForm = () => {
             d:new Date(EnteredDate),
             a:EnteredAmount
 
-        }  
+        };
+        prop.onSaveEnteredData(EnteredData);
         // error();
         // 
         // Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform
         // console.log(EnteredData); //because of some security issue we are not be able to see in chrome
-        console.log(EnteredData.a);
-        
+    
      }
     return <form onSubmit={sumbitHandler}>
         {/* form taking input of date ,title and amount*/}
