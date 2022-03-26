@@ -7,7 +7,7 @@ function Expense(prop) {
     //this is not going to change my dom=display in browser it
     // now we required state to change the dom
 
-    // const stremo = () => {
+    // const stremo = () => {  
     //     console.log("Removed");
     //     title='Updated!';
     //     console.log(title); //here my title is updated but down wala code is not called
@@ -31,7 +31,7 @@ function Expense(prop) {
             <h2>{title}</h2>
             <div className="expense-item__price">{prop.amount}</div>
         </div>
-        <button onClick={stremo}>Remove</button>
+        <button onClick={stremo}>change</button>
     </div>
 }
 export default Expense

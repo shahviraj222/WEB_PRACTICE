@@ -4,7 +4,7 @@
 import './App.css';
 import Expense from './componets/expenselist'
 import './componets/expenselist.css'
-
+import NewExpense from './componets/NewExpense/NewExpense';
 const date=new Date(2022,0,23); // 0 is january so that's why i get +1 month
 //below is array creted array element access by id no used in components 
 const expen = [
@@ -18,7 +18,8 @@ const expen = [
 
 function App() {
   return (
-    <div className="expenses"><h2>Expenses List</h2>
+    <div className="expenses">
+    <NewExpense></NewExpense>
     {/* nakme of array[id-no].name-of-attribute */}
       <Expense date={expen[0].date} title={expen[0].title} amount={expen[0].amount}></Expense>
       <Expense date={expen[1].date} title={expen[1].title} amount={expen[1].amount}></Expense>
