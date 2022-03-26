@@ -1,4 +1,7 @@
 const fs = require('fs');
-const text = fs.readFileSync("msg","utf-8")
-console.log("The content of the file is")
-console.log(text);
+fs.writeFile('e.txt','hitnjkzsdvn',()=>{console.log("Data is writen")});
+console.log("File is write")
+
+// const ks = require('fs');
+// var v = ks.readFileSync('d.txt','utf-8');
+// console.log(v);
