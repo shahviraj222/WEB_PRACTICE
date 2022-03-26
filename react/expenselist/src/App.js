@@ -17,9 +17,17 @@ const expen = [
 
 
 function App() {
+
+  const saveEnteredData=(enteredData)=>
+  {
+    const FinalEnteredData={
+      ...enteredData
+    }
+    console.log(enteredData.a);
+  }
   return (
     <div className="expenses">
-    <NewExpense></NewExpense>
+    <NewExpense onEnteredData={saveEnteredData}></NewExpense>
     {/* nakme of array[id-no].name-of-attribute */}
       <Expense date={expen[0].date} title={expen[0].title} amount={expen[0].amount}></Expense>
       <Expense date={expen[1].date} title={expen[1].title} amount={expen[1].amount}></Expense>
