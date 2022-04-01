@@ -25,9 +25,7 @@ function Expense(prop) {
 
       
     return <div className="expense-item">
-        {
-            
-        }
+       
         <div className='expensedate'>
             {/* String(prop.date.getMonth()).padStart(2, '0') */}
             <div>{prop.date.toLocaleString('default', { month: 'long' })}</div>
