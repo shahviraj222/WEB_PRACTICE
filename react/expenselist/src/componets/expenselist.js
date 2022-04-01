@@ -14,13 +14,20 @@ function Expense(prop) {
     // }
      
     const [title,setTitle]=useState(prop.title);
+
+    // if we click on change the do this 
     const stremo = () => {
-        console.log(title);
+          console.log(title);
             setTitle('Updated!!');
             console.log(title);
         }
     const date = prop.date;
+
+      
     return <div className="expense-item">
+        {
+            
+        }
         <div className='expensedate'>
             {/* String(prop.date.getMonth()).padStart(2, '0') */}
             <div>{prop.date.toLocaleString('default', { month: 'long' })}</div>

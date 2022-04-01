@@ -40,16 +40,16 @@ const ExpenseForm = (prop) => {
         {/* form taking input of date ,title and amount*/}
         <div className="new-expense__controls" >
             <div className="new-expense__controls">
-                <label>Title</label>
-                <input type='text' onChange={changetitle} />
+                <label for="ti">Title</label>
+                <input type='text' id="ti" onChange={changetitle} />
             </div>
             <div className="new-expense__controls">
-                <label>Amount</label>
-                <input type='number'  onChange={changeAmount} />
+                <label for="cna">Amount</label>
+                <input type='number' id="cna" onChange={changeAmount} />
             </div>
             <div className="new-expense__controls"> 
-                <label>Date</label>
-                <input type='date'  onChange={changeDate}/> 
+                <label for="date">Date</label>
+                <input type='date' id="date" onChange={changeDate}/> 
             </div>
             <div className="new-expense__action">
                 <button type="sumbit">Add Expense</button>

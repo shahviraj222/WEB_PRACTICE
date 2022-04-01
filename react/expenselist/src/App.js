@@ -1,6 +1,5 @@
 // all ways first letter of componets is in capital 
 // import logo from './logo.svg';
-
 import './App.css';
 import Expense from './componets/expenselist'
 import './componets/expenselist.css'
@@ -23,16 +22,31 @@ function App() {
     const FinalEnteredData={
       ...enteredData
     }
-    console.log(enteredData.a);
+    console.log(FinalEnteredData.a);
   }
   return (
     <div className="expenses">
-    <NewExpense onEnteredData={saveEnteredData}></NewExpense>
+       <NewExpense onEnteredData={saveEnteredData}></NewExpense>
+      {/* here we are calling content dynamically which display  */}
+       {
+        //  map is inbuilt methode hai for calling array 
+        // here we are calling map for expen array
+            expen.map((exp) =>
+            (
+              <Expense 
+              date={exp.date} 
+              title={exp.title} 
+              amount={exp.amount}>
+              </Expense>
+            ))    
+        }
+   
     {/* nakme of array[id-no].name-of-attribute */}
-      <Expense date={expen[0].date} title={expen[0].title} amount={expen[0].amount}></Expense>
+    {/* this is how are calling element by static way  */}
+      {/* <Expense date={expen[0].date} title={expen[0].title} amount={expen[0].amount}></Expense>
       <Expense date={expen[1].date} title={expen[1].title} amount={expen[1].amount}></Expense>
       <Expense date={expen[2].date} title={expen[2].title} amount={expen[2].amount}></Expense>
-      <Expense date={expen[3].date} title={expen[3].title} amount={expen[3].amount}></Expense>
+      <Expense date={expen[3].date} title={expen[3].title} amount={expen[3].amount}></Expense> */}
       </div>    
   );
 }
