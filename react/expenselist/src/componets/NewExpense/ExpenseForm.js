@@ -36,6 +36,11 @@ const ExpenseForm = (prop) => {
         // console.log(EnteredData); //because of some security issue we are not be able to see in chrome
     
      }
+     const [expense,setExp]=useState();
+     const addexpense=()=>
+     {
+         setExp([expense,...expense]);
+     }
     return <form onSubmit={sumbitHandler}>
         {/* form taking input of date ,title and amount*/}
         <div className="new-expense__controls" >
@@ -52,7 +57,7 @@ const ExpenseForm = (prop) => {
                 <input type='date' id="date" onChange={changeDate}/> 
             </div>
             <div className="new-expense__action">
-                <button type="sumbit">Add Expense</button>
+                <button type="sumbit" >Add Expense</button>
             </div>
         </div>
     </form>
