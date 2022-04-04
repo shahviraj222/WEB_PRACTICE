@@ -36,6 +36,9 @@ function App() {
       setModText("Enable light mode");
       showAlert("Dark mode is enable","success");
       // document.body.style.backgroundColor='black' 
+
+      // changing title of web page after the favicon
+      document.title="Text-Util-Dark-mode";
     }
     else
     {
@@ -43,6 +46,7 @@ function App() {
       setModText("Enable dark mode");
       showAlert("Light mode is enable","success");
       // document.body.style.backgroundColor='white' 
+      document.title="Text-Util-Light-mode";
     }
   }
   return (
