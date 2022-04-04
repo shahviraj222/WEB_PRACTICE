@@ -1,31 +1,55 @@
 import { useState } from "react";
 import About from "./componets/About";
+import Alert from "./componets/Alert";
 import Navbar from "./componets/Navbar";
 import Textform from "./componets/Textform";
 function App() {
   
+  // creating alert as variable and now my alert is given to alert component and then in alert we are calling
+  const [alert,setAlert]=useState(null);//some time due to null we get error so put prop.name && to after div of our component is define 
+
+  // creating a methode wich create alert
+    const showAlert=(msg,type)=>
+  {
+      // setalert is used to assign value to created variable 
+      setAlert(
+        // passing object as given
+          {
+              messeage:msg,
+              type:type
+          }
+      )
+      setTimeout(()=>{
+       setAlert(null);
+      },2000)
+  }
+
   // you can change the color of body so you don't go have to change particular component one by one 
   // document.body.style.backgroundColor='white' 
-  let modtext="Enable dark mode";
+ 
   const [modevalue,setdarkmode]=useState('light');//dark mode is enable or not
+  const [modtext,setModText]=useState("Enable dark mode");
   const changemode=()=>{
     if(modevalue==="light")
     {
       setdarkmode('dark');
-      modtext="Enable dark mode"
+      setModText("Enable light mode");
+      showAlert("Dark mode is enable","success");
       // document.body.style.backgroundColor='black' 
     }
     else
     {
       setdarkmode('light');
-      modtext="Enable dark light"
+      setModText("Enable dark mode");
+      showAlert("Light mode is enable","success");
       // document.body.style.backgroundColor='white' 
     }
   }
   return (
   <>
    <Navbar title="TextEditors" about="About" mode={modevalue} toggleMode={changemode} modtext={modtext}></Navbar>
-   <Textform mode={modevalue}></Textform>
+   <Alert alert={alert}></Alert>
+   <Textform mode={modevalue} showAlert={showAlert}></Textform>
    <About/>
   </>
  

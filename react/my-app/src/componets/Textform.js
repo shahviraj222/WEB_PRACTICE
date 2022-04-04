@@ -16,17 +16,21 @@ export default function Textform(prop) {
   const handleOnChange = (event) => {
     setText(event.target.value);
     // console.log(event.target.value)
+
   };
   
   // uppercase convertor
   const handleUpClick = () => {
+    prop.showAlert("Converted to UpperCase","success");
     let tex1 = text.toUpperCase();
     setText(tex1);
+
   };
 
   // lower case convertor
   const handleloClick = () => {
     let tex1 = text.toLowerCase();
+    prop.showAlert("Converted to LowerCase","success");
     setText(tex1);
   };
 
@@ -44,6 +48,7 @@ export default function Textform(prop) {
         updatedtext = updatedtext + temp;
       }
     }
+    prop.showAlert("Vowels are removed","success");
     setText(updatedtext);
   };
 
@@ -58,6 +63,7 @@ export default function Textform(prop) {
     const text=document.getElementById("inputPassword5");
     text.select();
     navigator.clipboard.writeText(text.value);
+    prop.showAlert("Copy to clipboard","success");
   };
   
   // removing extra space 
@@ -69,7 +75,7 @@ export default function Textform(prop) {
   return (
     <div>
       {/* ${prop.mode==='light'?'dark':'light'} this statement is change according to switch or mode change by the users */}
-      <div className={`text-center text-${prop.mode==='light'?'dark':'light'} bg-${prop.mode==='light'?'light':'dark'}`}>
+      <div className={`text-center text-${prop.mode==='light'?'dark':'light'} bg-${prop.mode}`}>
         <label htmlFor="inputPassword5" className={`form-label text-center text-${prop.mode==='light'?'dark':'light'}`}>
           <h3>Enter the text</h3>
         </label>
